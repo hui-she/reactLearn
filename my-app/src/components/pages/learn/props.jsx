@@ -14,6 +14,15 @@ export default class theProps extends React.Component{
         }
     }
 
+    componentWillUpdate() {
+        console.log('父元素更新开始');
+    }
+
+    componentDidUpdate() {
+        console.log('父元素更新结束');
+
+    }
+
     inputChange = (e)=>{
         console.log(e.target.value);
         this.setState({

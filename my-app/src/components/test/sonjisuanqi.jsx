@@ -7,6 +7,15 @@ export default class jisuanqi extends React.Component{
         };
     }
 
+    componentWillUpdate() {
+        console.log('子元素更新开始');
+    }
+
+    componentDidUpdate() {
+        console.log('子元素更新结束');
+
+    }
+
     add = ()=>{
         let sun = '';
         let {val1, val2, val3} = this.props;
