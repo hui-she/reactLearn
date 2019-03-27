@@ -15,6 +15,16 @@ export default class test3 extends React.Component{
         // console.log(this)
     }
 
+    //切换禁用状态
+    changeFlag = ()=> {
+        this.setState({
+            enable: !this.state.enable
+        },()=>{
+            console.log(1)
+        })
+        console.log(2)
+    }
+
     //传参1
     test = (a) => {
         console.log('test')
@@ -40,6 +50,11 @@ export default class test3 extends React.Component{
                 <div onClick={() => this.test(12)}>click</div>
                 <div onClick={this.testx(2222)}>click2</div>
                 <div onClick={(e) => this.test(e)}>click  eeee</div>
+                <br/>
+                <br/>
+                <div>state</div>
+                <button onClick={this.changeFlag}>切换状态</button>
+                <button>{this.state.enable?'启用':'禁用'}</button>
             </div>
             
         )

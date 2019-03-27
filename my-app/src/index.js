@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom
 import Test1 from './test1';
 import Test2 from './test2';
 import Test3 from './test3';
+import TheProps from './components/pages/learn/props'
 import Error from './components/error/error';
 import Navbar from './nav/nav';
 import './index.css';
@@ -18,6 +19,7 @@ ReactDOM.render(
                 <Route exact path="/" component={Test1}/>
                 <Route path="/test2" component={Test2}/>
                 <Route path="/test3" component={Test3}/>
+                <Route path="/props" component={TheProps}/>
                 <Redirect from="/redirect" to="/test3"/>
                 <Route component={Error}/>
             </Switch>
