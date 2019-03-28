@@ -26,6 +26,8 @@ class form extends React.Component{
             setN(per);
             console.log(per)
             console.log(per.name);
+            //测试git
+            console.log(121)
     }
 
     changeInput = (e,name)=>{
