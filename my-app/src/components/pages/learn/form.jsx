@@ -26,7 +26,7 @@ class form extends React.Component{
             setN(per);
             console.log(per)
             console.log(per.name);
-            console.log(1211)
+            console.log(2)
     }
 
     changeInput = (e,name)=>{
