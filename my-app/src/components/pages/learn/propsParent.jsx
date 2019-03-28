@@ -25,7 +25,8 @@ export default class parents extends React.Component{
         console.log(this.refs);
         //数组去重
         let arr = [2,3,1,4,3,7]
-        let newArr = Array.from(new Set(arr));
+        // let newArr = Array.from(new Set(arr));
+        let newArr = [...new Set(arr)];
         console.log(newArr)
     }
 
